@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f2ece0;
+    color: #222222;
+    font-family: 'Average', Georgia, serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-flex items-center justify-center font-sans uppercase tracking-widest text-xs font-semibold px-7 py-3.5 bg-[#f4d699] text-[#1e1d22] transition-all duration-300 hover:bg-[#e6c47c] hover:shadow-lg active:scale-95;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center font-sans uppercase tracking-widest text-xs font-semibold px-7 py-3.5 bg-[#1e1d22] text-[#f4d699] border border-[#1e1d22] transition-all duration-300 hover:bg-[#2e2c33] hover:text-white hover:shadow-lg active:scale-95;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center font-sans uppercase tracking-widest text-xs font-semibold px-7 py-3.5 bg-transparent text-[#1e1d22] border-2 border-[#1e1d22] transition-all duration-300 hover:bg-[#1e1d22] hover:text-[#f4d699] active:scale-95;
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center font-sans uppercase tracking-widest text-xs font-semibold px-7 py-3.5 bg-transparent text-[#f4d699] border border-[#f4d699] transition-all duration-300 hover:bg-[#f4d699] hover:text-[#1e1d22] active:scale-95;
+  }
+
+  .section-tag {
+    @apply inline-block font-sans uppercase tracking-[0.25em] text-[11px] font-semibold text-[#fe7259] mb-2;
+  }
+
+  .ornament-line {
+    @apply w-12 h-0.5 bg-[#f4d699] mx-auto my-3;
+  }
+}
+
+/* Custom smooth transitions & animations */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f2ece0;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7beaf;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a99f8f;
+}
