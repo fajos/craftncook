@@ -45,7 +45,7 @@ export const services = [
       "Uniformed, courteous professional serving brigade",
       "Catering coordination for indoor halls, gardens & outdoor marquees"
     ],
-    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "small-chops",
@@ -77,15 +77,15 @@ export const services = [
       "Complete pre-event grocery sourcing & post-dinner kitchen deep clean",
       "Available across Ojodu, Ikeja, Magodo, Lekki, Ikoyi & Victoria Island"
     ],
-    image: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: "meal-prep",
-    title: "Home & Corporate Meal Prep Delivery",
-    tagline: "Weekly wholesome food bowls",
-    priceRange: "From ₦35,000 / week",
-    description: "Scheduled weekly deliveries of healthy, chef-prepared meals for busy professionals, corporate offices, and families.",
-    longDescription: "Eliminate the weekday cooking stress. Choose your weekly meal plan, and receive freshly cooked, portion-controlled bowls delivered right to your home or office desk every Monday and Thursday morning.",
+    id: "corporate-catering",
+    title: "Corporate Luncheons & Gala Catering",
+    tagline: "Executive meetings & company banquets",
+    priceRange: "From ₦35,000 / week or custom quote",
+    description: "Scheduled deliveries of wholesome Nigerian & continental executive lunch bowls, and full banquet catering for corporate conferences.",
+    longDescription: "Eliminate the weekday corporate catering stress. Choose your weekly meal plan, and receive freshly cooked, portion-controlled bowls delivered right to your office desk across Lagos business districts.",
     features: [
       "Weekly rotating menus of wholesome Nigerian & continental meals",
       "Portion-controlled containers labeled with nutritional details",
@@ -93,7 +93,7 @@ export const services = [
       "Flexible pause or skip delivery schedules anytime",
       "Prompt delivery windows across Lagos metropolis"
     ],
-    image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -111,7 +111,7 @@ export const processSteps = [
   {
     step: "03",
     title: "Fresh Sourcing & Culinary Prep",
-    description: "Ingredients are sourced fresh on event morning from organic markets, prepared with supreme hygiene and classical craft."
+    description: "Ingredients are sourced fresh on event morning from local markets, prepared with supreme hygiene and classical craft."
   },
   {
     step: "04",

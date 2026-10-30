@@ -1,36 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Award, Utensils, Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Award, Utensils, Sparkles, ArrowRight, ShieldCheck, MessageCircle } from 'lucide-react';
 
 export default function HeroSlider({ onOpenBooking, onSelectService }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      subtitle: "Personal Chef & Catering Services",
+      subtitle: "Bespoke Catering & Event Hospitality",
       title: "Experience The Sublime!",
-      description: "CraftnCook curates artisanal private dining, luxury wedding galas, and bespoke culinary journeys tailored with uncompromising excellence.",
+      description: "CraftnCook curates legendary firewood Smokey Party Jollof, artisanal Nigerian soup bowls, custom celebration cakes, and private dining across Lagos.",
       image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80",
-      ctaText: "Explore Menus",
+      ctaText: "Explore Menus & Soups",
       ctaHref: "#menus",
-      accent: "Farm-to-Table Gastronomy"
+      accent: "Lagos Premier Catering"
     },
     {
-      subtitle: "Intimate Occasions & Milestones",
-      title: "Artistry in Every Course",
-      description: "From candlelit five-course dinners in your residence to prestigious corporate receptions, every ingredient is selected for peak seasonal flavor.",
-      image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80",
+      subtitle: "Weddings, Birthdays & Anniversaries",
+      title: "Artisan Cakes & Grand Banquets",
+      description: "From magnificent multi-tier wedding cakes to crispy Small Chops fiesta platters and luxury seafood feasts, every occasion is curated with passion.",
+      image: "https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1920&q=80",
       ctaText: "Book An Event",
       ctaHref: "#booking",
-      accent: "Michelin-Trained Chefs"
+      accent: "Bespoke Pastry & Cuisine"
     },
     {
-      subtitle: "Weekly Gourmet Living",
-      title: "Table-Ready Gourmet Meals",
-      description: "Reclaim your precious time. Fresh, organic, chef-crafted meals prepared in your kitchen and ready to savor whenever you desire.",
-      image: "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?auto=format&fit=crop&w=1920&q=80",
-      ctaText: "Discover Services",
-      ctaHref: "#services",
-      accent: "Custom Nutrition & Taste"
+      subtitle: "Doorstep Delivery Across Lagos",
+      title: "Table-Ready Gourmet Soup Bowls",
+      description: "Rich Egusi, Seafood Okra, and Efo Riro delivered freshly prepared in 2L, 3L & 5L containers. Wholesome home-style nutrition ready whenever you crave it.",
+      image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1920&q=80",
+      ctaText: "Order Soup Bowls",
+      ctaHref: "#menus",
+      accent: "Fresh Natural Ingredients"
     }
   ];
 
@@ -89,9 +89,19 @@ export default function HeroSlider({ onOpenBooking, onSelectService }) {
                     onClick={onOpenBooking}
                     className="btn-gold flex items-center gap-2 group"
                   >
-                    <span>Reserve Your Date</span>
+                    <span>Reserve Event Date</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
+
+                  <a
+                    href="https://wa.me/2348078604886?text=Hello%20CraftnCook,%20I%20would%20like%20to%20inquire%20about%20catering"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-6 py-3.5 rounded font-sans uppercase tracking-widest text-xs font-semibold shadow-lg transition"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    <span>WhatsApp Order</span>
+                  </a>
 
                   <a
                     href={slide.ctaHref}
@@ -136,10 +146,10 @@ export default function HeroSlider({ onOpenBooking, onSelectService }) {
         </div>
       </div>
 
-      {/* 3 Signature Quick Feature Cards (Direct from Alanzo Theme Evidence) */}
+      {/* 3 Signature Quick Feature Cards */}
       <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-8 -mt-16 sm:-mt-20 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Card 1: Catering Services */}
+          {/* Card 1: Event Catering & Smokey Jollof */}
           <div className="bg-[#fbf8f3] text-[#222222] p-8 rounded-sm shadow-xl border-t-4 border-[#fe7259] hover:-translate-y-1.5 transition-all duration-300 group">
             <div className="flex items-center justify-between mb-4">
               <span className="font-heading text-3xl text-[#fe7259]">01</span>
@@ -148,10 +158,10 @@ export default function HeroSlider({ onOpenBooking, onSelectService }) {
               </div>
             </div>
             <h3 className="text-xl font-heading text-[#1e1d22] mb-2 tracking-wide">
-              Catering Services
+              Event &amp; Party Catering
             </h3>
             <p className="text-sm text-zinc-600 font-serif leading-relaxed mb-4">
-              Our menu features time-honored favorites and contemporary culinary craft that have come to define unforgettable event dining.
+              Famous for our firewood-smoked Party Jollof, spicy small chops, and complete banquet orchestration for weddings and celebrations.
             </p>
             <a 
               href="#services" 
@@ -162,7 +172,7 @@ export default function HeroSlider({ onOpenBooking, onSelectService }) {
             </a>
           </div>
 
-          {/* Card 2: Table Ready Meals */}
+          {/* Card 2: Gourmet Soups Delivery */}
           <div className="bg-[#1e1d22] text-[#f2ece0] p-8 rounded-sm shadow-xl border-t-4 border-[#f4d699] hover:-translate-y-1.5 transition-all duration-300 group">
             <div className="flex items-center justify-between mb-4">
               <span className="font-heading text-3xl text-[#f4d699]">02</span>
@@ -171,21 +181,21 @@ export default function HeroSlider({ onOpenBooking, onSelectService }) {
               </div>
             </div>
             <h3 className="text-xl font-heading text-white mb-2 tracking-wide">
-              Table Ready Meals
+              Gourmet Nigerian Soups
             </h3>
             <p className="text-sm text-zinc-300 font-serif leading-relaxed mb-4">
-              Weekly personal chef visits to curate custom, nutrient-rich meals packaged in your home and ready to heat whenever you wish.
+              Authentic Egusi, Seafood Okra, and Efo Riro prepared in 2L, 3L &amp; 5L containers delivered fresh to your home or office in Lagos.
             </p>
             <a 
-              href="#services" 
+              href="#menus" 
               className="inline-flex items-center gap-1.5 text-xs font-sans uppercase tracking-widest font-semibold text-[#f4d699] hover:underline transition-colors"
             >
-              <span>Weekly Meal Service</span>
+              <span>Order Soup Bowls</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>
 
-          {/* Card 3: Sample Menus */}
+          {/* Card 3: Custom Cakes & Bakes */}
           <div className="bg-[#fbf8f3] text-[#222222] p-8 rounded-sm shadow-xl border-t-4 border-[#b49ebf] hover:-translate-y-1.5 transition-all duration-300 group">
             <div className="flex items-center justify-between mb-4">
               <span className="font-heading text-3xl text-[#a68eb2]">03</span>
@@ -194,16 +204,16 @@ export default function HeroSlider({ onOpenBooking, onSelectService }) {
               </div>
             </div>
             <h3 className="text-xl font-heading text-[#1e1d22] mb-2 tracking-wide">
-              Sample Menus
+              Bespoke Custom Cakes
             </h3>
             <p className="text-sm text-zinc-600 font-serif leading-relaxed mb-4">
-              Explore our dinner, brunch, vegan and gluten-free degustation portfolios crafted with pristine seasonal ingredients.
+              Stunning custom wedding cakes, birthday tiers, and dessert tables sculpted with rich buttercreams and premium vanilla beans.
             </p>
             <a 
-              href="#menus" 
+              href="#services" 
               className="inline-flex items-center gap-1.5 text-xs font-sans uppercase tracking-widest font-semibold text-[#1e1d22] group-hover:text-[#8f749d] transition-colors"
             >
-              <span>View Tasting Menus</span>
+              <span>Custom Cake Gallery</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>

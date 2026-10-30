@@ -11,10 +11,10 @@ export default function AboutSection({ onOpenBooking }) {
           {/* Left Column: Visual Composition with Chef and Plating */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Primary Image */}
+              {/* Primary Image: Executive Black Chef */}
               <div className="rounded shadow-2xl overflow-hidden border-8 border-white">
                 <img
-                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=800&q=80"
                   alt="Executive Chef CraftnCook"
                   className="w-full h-[480px] object-cover object-top hover:scale-105 transition-transform duration-700"
                 />
@@ -46,10 +46,10 @@ export default function AboutSection({ onOpenBooking }) {
 
             <div className="space-y-4 text-zinc-700 font-serif text-lg leading-relaxed mb-8">
               <p>
-                At <strong>CraftnCook</strong>, food is more than nourishment; it is an intimate theater of senses, memories, and camaraderie. Founded on the principle that the finest restaurant in the world is the table in your own home or private celebration, we blend classical European technique with vibrant seasonal harvests.
+                At <strong>CraftnCook</strong>, food is more than nourishment; it is an intimate celebration of flavor, family, and Nigerian hospitality. Based in Lagos, we blend authentic traditional techniques—from firewood-smoked Party Jollof and rich heritage soups to exquisite bespoke celebration cakes—with contemporary culinary presentation.
               </p>
               <p className="text-base text-zinc-600">
-                Whether orchestrating a 200-guest wedding banquet or cooking a quiet 4-course anniversary dinner for two, Chef CraftnCook sources every component from regenerative Midwest farms, sustainable fisheries, and artisanal purveyors.
+                Whether orchestrating a 300-guest wedding banquet in Ikeja, delivering weekly gourmet soup bowls to Magodo and Lekki, or catering an intimate private anniversary dinner, Chef CraftnCook sources the freshest ingredients daily from local markets and sustainable fisheries.
               </p>
             </div>
 
@@ -99,8 +99,8 @@ export default function AboutSection({ onOpenBooking }) {
               <div className="flex items-center gap-3">
                 <ChefHat className="w-8 h-8 text-[#fe7259]" />
                 <div className="text-xs font-sans">
-                  <span className="block font-bold text-[#1e1d22] uppercase tracking-wider">Chef Alanzo &amp; Brigade</span>
-                  <span className="text-zinc-500">Executive Culinary Direction</span>
+                  <span className="block font-bold text-[#1e1d22] uppercase tracking-wider">Chef CraftnCook &amp; Brigade</span>
+                  <span className="text-zinc-500">Executive Culinary Direction • Lagos</span>
                 </div>
               </div>
             </div>
