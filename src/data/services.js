@@ -1,121 +1,121 @@
 export const services = [
   {
-    id: "corporate-events",
-    title: "Corporate Events",
-    tagline: "Executive dining & gala hospitality",
-    priceRange: "From $85 / guest",
-    description: "Our corporate catering service features time-honored favorites and contemporary haute cuisine crafted to define the perfect corporate hospitality experience.",
-    longDescription: "From executive board retreats and product launches to year-end black-tie celebrations, CraftnCook provides end-to-end culinary orchestration. Our team manages beverage pairing, professional banquet waitstaff, bespoke cocktail bars, and flawless dietary-compliant multi-course menus designed to leave a lasting impression on your VIP stakeholders.",
+    id: "custom-cakes",
+    title: "Custom Cakes & Baked Treats",
+    tagline: "Artisan celebration & wedding cakes",
+    priceRange: "From ₦45,000 / $30",
+    description: "Handcrafted celebration cakes for birthdays, weddings, anniversaries, and milestones with bespoke flavors, elegant designs, and silky frostings.",
+    longDescription: "CraftnCook's pastry atelier crafts stunning custom celebration cakes that taste as magnificent as they look. From gravity-defying multi-tier wedding centerpieces to rich chocolate truffle birthday creations and themed dessert tables, we use only premium vanilla beans, Swiss cocoa, and gourmet fillings.",
     features: [
-      "Plated multi-course menus or luxury grazing tables",
-      "Executive sommelier wine & cocktail pairings",
-      "Dedicated culinary event director on-site",
-      "Full glassware, custom china & linen setup",
-      "Custom company branding on culinary presentations"
+      "Custom tiered wedding, birthday & anniversary designs",
+      "Flavors: Red Velvet, Moist Chocolate, Vanilla Bean, Carrot Pecan",
+      "Fondant sculpting, fresh floral accents & 24K edible gold leaf",
+      "Safe temperature-controlled doorstep delivery in Lagos",
+      "Complimentary tasting consultations for wedding clients"
     ],
-    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: "weddings-galas",
-    title: "Weddings & Galas",
-    tagline: "Bespoke celebration gastronomy",
-    priceRange: "From $120 / guest",
-    description: "Unforgettable wedding receptions and milestone celebrations curated around your love story and culinary passions with exquisite presentation.",
-    longDescription: "Every wedding has a distinct soul. At CraftnCook, Chef and our team work intimately with couples from initial tasting sessions through the final wedding dessert course. Whether you envision a 5-course French degustation under chandeliers or a lively Mediterranean family-style feast, we ensure culinary perfection on your special day.",
+    id: "authentic-soups",
+    title: "Gourmet Nigerian Soups (Bowls)",
+    tagline: "Rich, authentic soups delivered fresh",
+    priceRange: "From ₦25,000 / 2-Liter Bowl",
+    description: "Slow-simmered authentic Nigerian soup bowls (Egusi, Seafood Okra, Efo Riro, Afang, Banga) packed with proteins and fresh herbs.",
+    longDescription: "Enjoy traditional culinary heritage without spending hours over the stove. CraftnCook prepares premium bowls of authentic soups crafted with dry catfish, jumbo tiger prawns, goat meat, and fresh market greens. Packaged in freezer-safe, food-grade containers ready for instant enjoyment or weekly storage.",
     features: [
-      "Complimentary private menu tasting for the couple",
-      "Signature bride & groom bespoke cocktails",
-      "Late-night artisan snack bars & dessert stations",
-      "Comprehensive kitchen mobilization at any venue",
-      "Full coordination with your wedding planner"
-    ],
-    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: "special-events",
-    title: "Special Events",
-    tagline: "Intimate anniversaries & milestones",
-    priceRange: "From $95 / guest",
-    description: "Intimate private dining experiences for birthdays, anniversaries, and family reunions hosted in the intimacy of your private residence or venue.",
-    longDescription: "Transform your home or villa into a Michelin-inspired dining destination. Chef CraftnCook brings the finest seasonal ingredients, handles all prep, tableside plating, and leaves your kitchen spotless so you can relax completely with your guests.",
-    features: [
-      "Customized 3 to 7 course seasonal menus",
-      "Intimate party sizes from 4 to 30 guests",
-      "Tableside chef explanations of dishes & origins",
-      "Complete pre-event grocery sourcing & cleanup",
-      "Special dessert candle & celebration presentation"
-    ],
-    image: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: "cooking-classes",
-    title: "Cooking Classes",
-    tagline: "Interactive culinary masterclasses",
-    priceRange: "From $75 / person",
-    description: "Hands-on culinary workshops where you learn classical techniques, knife skills, fresh pasta crafting, and sauce alchemy from master chefs.",
-    longDescription: "Step behind the apron! Our interactive culinary masterclasses are designed for food enthusiasts, corporate team-building events, and couples seeking a unique evening. Everyone cooks, tastes, pairs wines, and takes home detailed recipe folios and kitchen secrets.",
-    features: [
-      "Hands-on cooking stations with professional tools",
-      "Themes: Handmade Pasta, French Sauces, Japanese Sushi",
-      "Sommelier-curated wine tasting during the class",
-      "Complete recipe books and spice kit giveaways",
-      "Group sizes from 6 to 24 participants"
-    ],
-    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: "meal-prep",
-    title: "In-Home Meal Preparation",
-    tagline: "Fresh table-ready chef dinners",
-    priceRange: "From $350 / week",
-    description: "Personal chef visits your home weekly to prepare customized, wholesome, and delicious meals packaged and ready to heat whenever you need.",
-    longDescription: "Reclaim your evenings without compromising on nutrition or culinary delight. Chef designs an individualized menu based on your macro targets, food allergies, and palate preferences, shops at organic markets, cooks in your kitchen, and packages everything in labeled glass containers.",
-    features: [
-      "Weekly seasonal menu customized to your diet",
-      "Fresh organic market sourcing & grocery handling",
-      "Eco-friendly glass container packaging & labeling",
-      "Detailed reheating instructions for optimum flavor",
-      "Complete kitchen sanitation after every visit"
+      "Available in 2-Liter, 3-Liter, and 5-Liter family containers",
+      "Packed with choice of proteins: Assorted Meats, Catfish, Prawns, Stockfish",
+      "Zero artificial preservatives; 100% natural spices & locust beans (Iru)",
+      "Accompaniments: Fresh poundo, semo, or garri options upon request",
+      "Delivered chilled or piping hot across Lagos Mainland & Island"
     ],
     image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: "consulting",
-    title: "Restaurant & Culinary Consulting",
-    tagline: "Concept architecture & menu R&D",
-    priceRange: "Custom Engagement",
-    description: "Strategic culinary advisory for hospitality brands, restaurants, boutique hotels, and new food concepts seeking culinary excellence.",
-    longDescription: "With decades of kitchen leadership, CraftnCook advises emerging and established restaurants on menu engineering, kitchen line efficiency, food cost reduction, vendor sourcing, and training back-of-house culinary teams to perform at peak standards.",
+    id: "event-catering",
+    title: "Event & Party Catering",
+    tagline: "Smokey Party Jollof & gala banquets",
+    priceRange: "From ₦6,500 / $5 per guest",
+    description: "Complete catering orchestration for weddings, birthdays, burials, housewarmings, and corporate end-of-year banquets.",
+    longDescription: "Make your event unforgettable with CraftnCook's renowned event catering. Famous for our firewood-smoked Party Jollof, savory fried rice, and tender charcoal barbecue chicken, we provide buffet styling, chafing dish stations, and courteous professional servers to cater parties from 30 to 1,000 guests.",
     features: [
-      "Menu engineering, dish pricing & costing matrix",
-      "Kitchen equipment layout & workflow optimization",
-      "Standard Operating Procedures (SOP) manuals",
-      "Line cook and sous-chef culinary masterclass training",
-      "Grand opening & soft launch operational support"
+      "Firewood Smokey Party Jollof, Fried Rice & Asun Rice stations",
+      "Charcoal-grilled chicken quarters, peppered beef & fish fillets",
+      "Complete chafing dish, buffet display & warming setup",
+      "Uniformed, courteous professional serving brigade",
+      "Catering coordination for indoor halls, gardens & outdoor marquees"
+    ],
+    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "small-chops",
+    title: "Party Small Chops & Finger Foods",
+    tagline: "Hot, crispy cocktail finger food platters",
+    priceRange: "From ₦1,500 / pack",
+    description: "Freshly fried golden puff puff, crispy spring rolls, spicy samosas, and peppered gizzards/meats packaged for celebrations and meetings.",
+    longDescription: "No Lagos party or corporate mixer is complete without finger-licking Small Chops! Prepared live on-site or delivered in custom branded boxes, our small chops feature crisp pastry shells, aromatic fillings, and fluffy, golden cardamom-scented puff puff.",
+    features: [
+      "Platters & individual packs (Spring Rolls, Samosa, Puff Puff, Mosa)",
+      "Peppered meats: Gizzard skewers, peppered beef, spicy wings, asun",
+      "Live frying stations available for outdoor weddings & carnivals",
+      "Custom branded corporate packaging for boardroom events",
+      "Minimum orders from 20 packs up to 2,000 packs"
     ],
     image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "private-chef",
+    title: "In-Home Private Chef Dining",
+    tagline: "Intimate multi-course chef experience",
+    priceRange: "From ₦50,000 / event",
+    description: "Chef CraftnCook visits your home or private residence to cook an exclusive multi-course meal, serve tableside, and leave the kitchen spotless.",
+    longDescription: "Transform your home into an exclusive dining destination for date nights, intimate anniversaries, or private family celebrations. Chef designs an exquisite custom menu, brings all fresh ingredients, plates each course with artistic elegance, and takes care of all kitchen sanitation.",
+    features: [
+      "Custom 3 to 5 course tasting menus tailored to your exact tastes",
+      "Tableside presentation explaining the flavor origins of each course",
+      "Dietary customizations: Keto, pescatarian, vegan, and diabetic-friendly",
+      "Complete pre-event grocery sourcing & post-dinner kitchen deep clean",
+      "Available across Ojodu, Ikeja, Magodo, Lekki, Ikoyi & Victoria Island"
+    ],
+    image: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "meal-prep",
+    title: "Home & Corporate Meal Prep Delivery",
+    tagline: "Weekly wholesome food bowls",
+    priceRange: "From ₦35,000 / week",
+    description: "Scheduled weekly deliveries of healthy, chef-prepared meals for busy professionals, corporate offices, and families.",
+    longDescription: "Eliminate the weekday cooking stress. Choose your weekly meal plan, and receive freshly cooked, portion-controlled bowls delivered right to your home or office desk every Monday and Thursday morning.",
+    features: [
+      "Weekly rotating menus of wholesome Nigerian & continental meals",
+      "Portion-controlled containers labeled with nutritional details",
+      "Corporate bulk delivery contracts for staff lunches & executive retreats",
+      "Flexible pause or skip delivery schedules anytime",
+      "Prompt delivery windows across Lagos metropolis"
+    ],
+    image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
 export const processSteps = [
   {
     step: "01",
-    title: "Consultation & Vision",
-    description: "We meet in person or via video to understand your taste preferences, event theme, guest dietary needs, and vision."
+    title: "Inquiry & Menu Selection",
+    description: "Connect via WhatsApp (+234 807 860 4886), Instagram DM, or our online portal to select your catering, soup bowls, or custom cake concept."
   },
   {
     step: "02",
-    title: "Bespoke Menu Design",
-    description: "Chef curates an exclusive seasonal menu proposal matching local market availability and exact flavor pairings."
+    title: "Custom Quote & Confirmation",
+    description: "We provide an itemized quote tailored to your guest size, dietary preferences, delivery date, and event venue."
   },
   {
     step: "03",
-    title: "Private Tasting Session",
-    description: "Experience your dishes prior to the main event. We refine seasoning, presentation, and wine pairings to your feedback."
+    title: "Fresh Sourcing & Culinary Prep",
+    description: "Ingredients are sourced fresh on event morning from organic markets, prepared with supreme hygiene and classical craft."
   },
   {
     step: "04",
-    title: "Flawless Execution",
-    description: "Our culinary brigade arrives, transforms the dining space, presents artful courses, and leaves everything spotless."
+    title: "Punctual Delivery & Service",
+    description: "Piping hot delivery or full on-site buffet banquet setup at your venue with flawless hospitality and presentation."
   }
 ];

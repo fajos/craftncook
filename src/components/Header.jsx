@@ -10,12 +10,16 @@ import {
   Sparkles, 
   ShoppingBag,
   ExternalLink,
-  ShieldCheck
+  ShieldCheck,
+  MessageCircle
 } from 'lucide-react';
+import InstagramIcon from './InstagramIcon';
 
 export default function Header({ 
   headerStyle, 
   setHeaderStyle, 
+  currency,
+  setCurrency,
   onOpenBooking, 
   onOpenEvidence, 
   tastingBasketCount, 
@@ -40,36 +44,77 @@ export default function Header({
     { name: 'Home', href: '#hero' },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
-    { name: 'Menus', href: '#menus' },
-    { name: 'Book A Chef', href: '#booking' },
+    { name: 'Menus & Soups', href: '#menus' },
+    { name: 'Custom Cakes', href: '#services' },
+    { name: 'Book An Event', href: '#booking' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <>
-      {/* Top Bar matching Alanzo Top Bar specifications */}
+      {/* Top Bar with Real Google Business Profile Data */}
       <div className="bg-[#0e0d12] text-[#f2ece0]/80 text-xs py-2.5 px-4 sm:px-8 border-b border-[#2e2c33]/60 hidden md:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-6">
-            <a href="tel:8445950487" className="flex items-center gap-1.5 hover:text-[#f4d699] transition-colors">
-              <Phone className="w-3.5 h-3.5 text-[#f4d699]" />
-              <span>(844) 595-0487</span>
+            {/* Phone & WhatsApp */}
+            <a 
+              href="https://wa.me/2348078604886?text=Hello%20CraftnCook,%20I%20would%20like%20to%20make%20an%20inquiry" 
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 hover:text-[#25D366] transition-colors"
+              title="Chat with CraftnCook on WhatsApp"
+            >
+              <MessageCircle className="w-3.5 h-3.5 text-[#25D366]" />
+              <span className="font-semibold text-white">+234 807 860 4886</span>
             </a>
+
+            {/* Address */}
             <div className="flex items-center gap-1.5 text-zinc-400">
-              <MapPin className="w-3.5 h-3.5 text-[#f4d699]" />
-              <span>8500 Lorem Street, Chicago, IL 55030</span>
+              <MapPin className="w-3.5 h-3.5 text-[#fe7259]" />
+              <span>Ojodu Berger / Ikeja, Lagos, Nigeria</span>
             </div>
+
+            {/* Hours */}
             <div className="flex items-center gap-1.5 text-zinc-400">
               <Clock className="w-3.5 h-3.5 text-[#f4d699]" />
-              <span>Tue - Sun: 10:00 AM – 11:00 PM</span>
+              <span>Mon – Sat: 8:00 AM – 8:00 PM</span>
             </div>
           </div>
 
           <div className="flex items-center space-x-4">
-            {/* Header Style Switcher (Demonstrating Alanzo's Header 1 vs Header 2) */}
+            {/* Currency Toggle */}
             <div className="flex items-center bg-[#1e1d22] rounded px-2 py-0.5 border border-[#3a3842] text-[11px]">
-              <span className="text-zinc-400 mr-2">Layout:</span>
+              <span className="text-zinc-400 mr-2">Currency:</span>
+              <button 
+                onClick={() => setCurrency('NGN')}
+                className={`px-1.5 py-0.5 rounded transition ${currency === 'NGN' ? 'bg-[#fe7259] text-white font-bold' : 'text-zinc-400 hover:text-white'}`}
+              >
+                ₦ NGN
+              </button>
+              <button 
+                onClick={() => setCurrency('USD')}
+                className={`px-1.5 py-0.5 rounded transition ${currency === 'USD' ? 'bg-[#fe7259] text-white font-bold' : 'text-zinc-400 hover:text-white'}`}
+              >
+                $ USD
+              </button>
+            </div>
+
+            {/* Instagram Link */}
+            <a
+              href="https://www.instagram.com/craft.ncook"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1 text-zinc-300 hover:text-[#f4d699] transition-colors"
+              title="Visit CraftnCook on Instagram"
+            >
+              <InstagramIcon className="w-3.5 h-3.5 text-[#fe7259]" />
+              <span>@craft.ncook</span>
+            </a>
+
+            {/* Header Style Switcher (Alanzo Theme Header 1 vs Header 2) */}
+            <div className="flex items-center bg-[#1e1d22] rounded px-2 py-0.5 border border-[#3a3842] text-[11px]">
+              <span className="text-zinc-400 mr-2">Theme:</span>
               <button 
                 onClick={() => setHeaderStyle('header1')}
                 className={`px-2 py-0.5 rounded transition ${headerStyle === 'header1' ? 'bg-[#f4d699] text-[#1e1d22] font-semibold' : 'text-zinc-300 hover:text-white'}`}
@@ -86,14 +131,14 @@ export default function Header({
               </button>
             </div>
 
-            {/* Template Evidence Inspector Pill */}
+            {/* Google Business Profile Verified Badge */}
             <button
               onClick={onOpenEvidence}
               className="flex items-center gap-1.5 bg-[#fe7259]/20 hover:bg-[#fe7259]/30 text-[#fe7259] px-2.5 py-1 rounded text-[11px] font-sans font-medium transition-colors border border-[#fe7259]/30"
-              title="Inspect extracted evidence from Alanzo ThemeForest template"
+              title="Inspect Google Business Profile & Template Architecture"
             >
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Live Theme Evidence</span>
+              <span>GBP Verified</span>
             </button>
           </div>
         </div>
@@ -112,7 +157,7 @@ export default function Header({
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
-          {/* Logo with Culinary Brand Identity */}
+          {/* Logo */}
           <a href="#hero" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-full bg-[#f4d699] flex items-center justify-center text-[#1e1d22] shadow-md group-hover:scale-105 transition-transform">
               <UtensilsCrossed className="w-5 h-5" />
@@ -122,13 +167,13 @@ export default function Header({
                 Craft<span className="text-[#fe7259]">n</span>Cook
               </span>
               <span className="text-[10px] uppercase font-sans tracking-[0.25em] block text-[#f4d699]">
-                Personal Chef &amp; Catering
+                Catering • Soups • Cakes • Lagos
               </span>
             </div>
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center space-x-7">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -143,14 +188,26 @@ export default function Header({
           </nav>
 
           {/* Header Action CTAs */}
-          <div className="hidden sm:flex items-center space-x-4">
+          <div className="hidden sm:flex items-center space-x-3">
+            {/* WhatsApp Quick Link */}
+            <a
+              href="https://wa.me/2348078604886?text=Hello%20CraftnCook,%20I%20would%20like%20to%20order%20catering%20or%20cakes"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 bg-[#25D366] hover:bg-[#20ba59] text-white px-3.5 py-2 rounded text-xs font-sans font-bold shadow transition"
+              title="Quick WhatsApp Order"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>WhatsApp</span>
+            </a>
+
             {/* Tasting Basket button */}
             <button
               onClick={onOpenBasket}
               className={`relative p-2.5 rounded-full transition ${
                 headerStyle === 'header1' ? 'text-zinc-200 hover:bg-[#2e2c33]' : 'text-zinc-800 hover:bg-[#e6decf]'
               }`}
-              title="View Selected Tasting Dishes"
+              title="View Selected Dishes &amp; Soups"
             >
               <ShoppingBag className="w-5 h-5" />
               {tastingBasketCount > 0 && (
@@ -172,6 +229,14 @@ export default function Header({
 
           {/* Mobile Menu Button */}
           <div className="flex lg:hidden items-center space-x-2">
+            <a
+              href="https://wa.me/2348078604886"
+              target="_blank"
+              rel="noreferrer"
+              className="p-2 text-[#25D366]"
+            >
+              <MessageCircle className="w-5 h-5" />
+            </a>
             <button
               onClick={onOpenBasket}
               className={`p-2 rounded ${headerStyle === 'header1' ? 'text-white' : 'text-[#1e1d22]'}`}
@@ -191,6 +256,24 @@ export default function Header({
         {mobileMenuOpen && (
           <div className="lg:hidden bg-[#1e1d22] text-[#f2ece0] px-6 py-6 border-t border-[#3a3842] shadow-2xl animate-fadeIn">
             <div className="flex flex-col space-y-4">
+              <div className="flex justify-between items-center pb-2 border-b border-[#2e2c33]">
+                <span className="text-xs text-zinc-400 font-sans">Currency:</span>
+                <div className="flex gap-2">
+                  <button 
+                    onClick={() => setCurrency('NGN')}
+                    className={`px-2 py-1 rounded text-xs ${currency === 'NGN' ? 'bg-[#fe7259] text-white font-bold' : 'text-zinc-400'}`}
+                  >
+                    ₦ NGN
+                  </button>
+                  <button 
+                    onClick={() => setCurrency('USD')}
+                    className={`px-2 py-1 rounded text-xs ${currency === 'USD' ? 'bg-[#fe7259] text-white font-bold' : 'text-zinc-400'}`}
+                  >
+                    $ USD
+                  </button>
+                </div>
+              </div>
+
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -203,6 +286,15 @@ export default function Header({
               ))}
               
               <div className="pt-2 flex flex-col gap-3">
+                <a
+                  href="https://wa.me/2348078604886?text=Hello%20CraftnCook,%20I%20would%20like%20to%20order"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-[#25D366] text-white py-3 rounded text-center font-sans font-bold flex items-center justify-center gap-2 text-xs uppercase tracking-wider"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span>Chat on WhatsApp (+234 807 860 4886)</span>
+                </a>
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);
@@ -219,7 +311,7 @@ export default function Header({
                   }}
                   className="text-xs text-[#fe7259] bg-[#fe7259]/10 py-2.5 px-4 rounded text-center border border-[#fe7259]/20"
                 >
-                  View Template Evidence &amp; Architecture
+                  View Google Business Profile &amp; Template Specs
                 </button>
               </div>
             </div>

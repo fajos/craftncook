@@ -1,37 +1,37 @@
 export const testimonials = [
   {
     id: 1,
-    name: "Karen L.",
-    role: "Private Wedding Host",
-    location: "Lincoln Park, Chicago",
-    quote: "CraftnCook orchestrated our wedding banquet with sheer magnificence. The guests still talk about the Warm Mackerel salad and the tender pork belly months later. The service was seamless and warm.",
+    name: "Dr. Funmi A.",
+    role: "Wedding Host",
+    location: "Ikeja GRA, Lagos",
+    quote: "CraftnCook catered our wedding reception of 250 guests. The smokey party Jollof was cooked to absolute perfection, and our guests couldn't stop praising the custom 4-tier vanilla bean cake. Professional and on-time!",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
   },
   {
     id: 2,
-    name: "James B.",
-    role: "Corporate Executive Director",
-    location: "Loop Financial District",
-    quote: "We hired CraftnCook for our annual board gala and investor dinner. The attention to dietary nuances and wine pairings was extraordinary. Pure Michelin-level execution right in our executive suite.",
+    name: "Babajide O.",
+    role: "Corporate Operations Lead",
+    location: "Victoria Island, Lagos",
+    quote: "We ordered 80 packs of Small Chops and Jollof bowls for our quarterly company town hall. Crisp samosas, soft puff puff, and prompt delivery right to our office building. CraftnCook is our official corporate caterer now.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
   },
   {
     id: 3,
-    name: "Lucinda D.",
-    role: "Milestone Anniversary Host",
-    location: "Gold Coast, Chicago",
-    quote: "Having Chef cook in our home was the most effortless and luxurious party we have ever hosted. Not only was the sea bass sublimely cooked, but the kitchen was left cleaner than they found it!",
+    name: "Amara N.",
+    role: "Weekly Meal Prep Client",
+    location: "Magodo Phase 2, Lagos",
+    quote: "Their Seafood Okra and Egusi soup bowls have saved my family hours every week. Rich in seafood, fresh proteins, zero MSG taste, and tastes like home cooking at its finest.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
   },
   {
     id: 4,
-    name: "Thomas S.",
-    role: "Food & Wine Society Chair",
-    location: "Evanston, IL",
-    quote: "The culinary consulting and masterclass held by CraftnCook was simply inspiring. Deep technical expertise paired with an approachable, gracious culinary philosophy.",
+    name: "Tunde & Seyi M.",
+    role: "Birthday & Milestone Celebration",
+    location: "Ojodu Berger, Lagos",
+    quote: "The personalized attention from Chef CraftnCook for my 40th birthday was exceptional. From the dessert display to the live peppered meats and private dinner, everything exceeded our expectations.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
   }
@@ -39,23 +39,23 @@ export const testimonials = [
 
 export const stats = [
   {
-    value: "1,046",
+    value: "1,200+",
     label: "Happy Clients",
-    detail: "Banquets & private dinners hosted with 99.8% satisfaction"
+    detail: "Celebrations, weddings & corporate orders fulfilled"
+  },
+  {
+    value: "450+",
+    label: "Events Catered",
+    detail: "Across Lagos Mainland, Island & surrounding areas"
   },
   {
     value: "350+",
-    label: "Events Catered",
-    detail: "Weddings, galas, executive retreats & celebrations"
+    label: "Custom Cakes Baked",
+    detail: "Artisan birthday, wedding & tiered celebration cakes"
   },
   {
-    value: "120+",
-    label: "Artisan Recipes",
-    detail: "Seasonal farm-to-table creations designed in-house"
-  },
-  {
-    value: "18",
-    label: "Years of Mastery",
-    detail: "Classical European training & global culinary leadership"
+    value: "99.8%",
+    label: "Punctual Delivery",
+    detail: "Doorstep delivery & on-time banquet setup guarantee"
   }
 ];

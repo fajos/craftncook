@@ -17,11 +17,12 @@ import EvidenceDrawer from './components/EvidenceDrawer';
 
 export default function App() {
   const [headerStyle, setHeaderStyle] = useState('header1');
+  const [currency, setCurrency] = useState('NGN');
   const [selectedDishModal, setSelectedDishModal] = useState(null);
   const [tastingBasket, setTastingBasket] = useState([]);
   const [isBasketOpen, setIsBasketOpen] = useState(false);
   const [isEvidenceOpen, setIsEvidenceOpen] = useState(false);
-  const [preselectedBookingService, setPreselectedBookingService] = useState('Special Events');
+  const [preselectedBookingService, setPreselectedBookingService] = useState('Event Catering & Smokey Jollof');
 
   // Handle adding or removing dishes from tasting basket
   const handleToggleBasket = (dish) => {
@@ -55,10 +56,12 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#f2ece0] text-[#222222] font-serif flex flex-col selection:bg-[#f4d699] selection:text-[#1e1d22]">
-      {/* Header with Style Switcher, Navigation & Tasting Basket Indicator */}
+      {/* Header with Style Switcher, Currency Selector & Verified Google Profile */}
       <Header
         headerStyle={headerStyle}
         setHeaderStyle={setHeaderStyle}
+        currency={currency}
+        setCurrency={setCurrency}
         onOpenBooking={() => scrollToBooking()}
         onOpenEvidence={() => setIsEvidenceOpen(true)}
         tastingBasketCount={tastingBasket.length}
@@ -77,14 +80,15 @@ export default function App() {
           onOpenBooking={() => scrollToBooking()} 
         />
 
-        {/* Specialized Catering Offerings (Corporate, Weddings, Masterclasses, Meal Prep) */}
+        {/* Specialized Catering Offerings (Custom Cakes, Soups, Catering, Small Chops, Meal Prep) */}
         <ServicesSection 
           onOpenBooking={() => scrollToBooking()}
           onSelectServiceForBooking={(serviceTitle) => scrollToBooking(serviceTitle)}
         />
 
-        {/* Filterable Signature Menus & Tasting Selection */}
+        {/* Filterable Signature Menus, Soups & Tasting Selection */}
         <MenuSection
+          currency={currency}
           onSelectDishModal={(dish) => setSelectedDishModal(dish)}
           onAddToBasket={handleToggleBasket}
           tastingBasket={tastingBasket}
@@ -95,6 +99,7 @@ export default function App() {
 
         {/* Online Appointment Booking & Catering Cost Estimator */}
         <BookingSection 
+          currency={currency}
           preselectedService={preselectedBookingService} 
         />
 
@@ -107,7 +112,7 @@ export default function App() {
         {/* Culinary & Events Photo Gallery with Lightbox */}
         <GallerySection />
 
-        {/* Contact Information & Inquiry Desk */}
+        {/* Contact Information & Inquiry Desk with Verified GBP Integration */}
         <ContactSection />
       </main>
 
@@ -129,12 +134,13 @@ export default function App() {
         isOpen={isBasketOpen}
         onClose={() => setIsBasketOpen(false)}
         basket={tastingBasket}
+        currency={currency}
         onRemoveItem={handleRemoveFromBasket}
         onClearBasket={handleClearBasket}
         onProceedToBooking={() => scrollToBooking()}
       />
 
-      {/* ThemeForect / Alanzo Reverse-Engineering Evidence Modal */}
+      {/* Google Business Profile & Template Evidence Modal */}
       <EvidenceDrawer
         isOpen={isEvidenceOpen}
         onClose={() => setIsEvidenceOpen(false)}
